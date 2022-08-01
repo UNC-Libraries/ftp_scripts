@@ -83,7 +83,7 @@ Here is an example:
 
 
 Other columns will be used to create the YAML file named `metadata.yml` within each work folder, which will look something like this:  
- ```
+ ```yml
 work_id: "32025806" 
 
 title: "test_01" 
