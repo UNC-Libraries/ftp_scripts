@@ -87,7 +87,7 @@ When the 'Save as...' window pops up, you will want to change the extension of t
 
 ## 5. Running the Script
 
-== Before continuing, make sure to change the folder's name to 'files_to_sort' as that the folder name is what the script will look for. Otherwise, you will have to open up a text/code editor and change the script. == 
+> **Before continuing, make sure to change the folder's name to 'files_to_sort' as that the folder name is what the script will look for. Otherwise, you will have to open up a text/code editor and change the script.** 
 
 ### Opening the Terminal
 1. Open the command prompt (Windows) or terminal (Mac/Linux) within the parent directory of the folder containing the files.
@@ -158,5 +158,6 @@ Follow the same directions as the previous script except using [csv_to_yml.py](.
 
 
 ## 4. Running the Script 
-== Before continuing, make sure the folder's name is 'files_to_sort' as that the folder name is what the script will look for. Further, make sure the CSV file is named 'metadata.csv' as that is the name of the csv the file will look for. Otherwise, you will have to open up a text/code editor and change the script. ==  
+> **Before continuing, make sure the folder's name is 'files_to_sort' as that the folder name is what the script will look for. Further, make sure the CSV file is named 'metadata.csv' as that is the name of the csv the file will look for. Otherwise, you will have to open up a text/code editor and change the script.** 
+
 Follow the same directions as the previous script except using `python csv_to_yml.py` in the command prompt/terminal.
