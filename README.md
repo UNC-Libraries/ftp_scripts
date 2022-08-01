@@ -64,7 +64,6 @@ The organized version, ready for uploading into a FromThePage collection, has al
       |-- 78-21605_2.JPG
 ```
 
-
 ## 3. Setting Up Your Local Environment
 
 Before you can successfully run the script, you will need to have all the files needed to be organized within a single folder in an easy-to-locate location, as you will need navigate to the folder's location through the command line/terminal.
@@ -85,7 +84,10 @@ When the 'Save as...' window pops up, you will want to change the extension of t
 
 ![Alt Text](./Images/save_as_python_file.png)
 
+
 ## 5. Running the Script
+
+== Before continuing, make sure to change the folder's name to 'files_to_sort' as that the folder name is what the script will look for. Otherwise, you will have to open up a text/code editor and change the script. == 
 
 ### Opening the Terminal
 1. Open the command prompt (Windows) or terminal (Mac/Linux) within the parent directory of the folder containing the files.
@@ -149,14 +151,12 @@ description: "Test document 1"
 date_created: "7/18/22" 
  ```
 ## 2. Setting Up Your Local Environment
-Move the CSV you will want to convert to the parent directory of the folder containing the works to be uploaded. This script assumes you have the similar folder structures to the resulting folder from the 'sort_record_files.py' script. It also assumes that the folder the works are in is called **files_to_sort** and the CSV is called **metadata.csv**. If you want to change this, after you have downloaded the script, open it in a text/script editor and edit the following lines:
-* Change the `metadata.csv` in `with open('./metadata.csv', newline='') as md:` to the name of your CSV file.
-
-* Change `files_sort` folder name in `file_path = "./files_to_sort/"+record['identifier'] + '/' + 'metadata.yml'` to the name of the folder you are using.
+Move the CSV you will want to convert to the parent directory of the folder containing the works to be uploaded. This script assumes you have the similar folder structures to the resulting folder from the 'sort_record_files.py' script and the folder is called 'files_to_sort.' 
 
 ## 3. Downloading the Script
 Follow the same directions as the previous script except using [csv_to_yml.py](./csv_to_yml.py) instead.
 
 
-## 4. Running the Script
+## 4. Running the Script 
+== Before continuing, make sure the folder's name is 'files_to_sort' as that the folder name is what the script will look for. Further, make sure the CSV file is named 'metadata.csv' as that is the name of the csv the file will look for. Otherwise, you will have to open up a text/code editor and change the script. ==  
 Follow the same directions as the previous script except using `python csv_to_yml.py` in the command prompt/terminal.
