@@ -66,10 +66,39 @@ When the 'Save as...' window pops up, you will want to change the extension of t
 2. Type in `python sort_record_files.py` into the command prompt/terminal then press enter/return.
 
 Your folder **before** running the script should look something like this:
-![alt text](./Images/folder_before.png)
+```bash
+|--files_to_sort
+> |--78-21601_1.JPG
+> |--78-21601_2.JPG
+> |--78-21602_1.JPG
+> |--78-21602_2.JPG
+> |--78-21603_1.JPG
+> |--78-21603_2.JPG
+> |--78-21604_1.JPG
+> |--78-21604_2.JPG
+> |--78-21605_1.JPG
+> |--78-21605_2.JPG
+```
 
 Your folder **after** running the script should look something like this:
-![alt text](./Images/folder_after.png)
+```bash
+|--files_to_sort
+> |--78-21601
+>> |--78-21601_1.JPG
+>> |--78-21601_2.JPG
+> |--78-21602
+>> |--78-21602_1.JPG
+>> |--78-21602_2.JPG
+> |--78-21603
+>> |--78-21603_1.JPG
+>> |--78-21603_2.JPG
+> |--78-21604
+>> |--78-21604_1.JPG
+>> |--78-21604_2.JPG
+> |--78-21605
+>> |--78-21605_1.JPG
+>> |--78-21605_2.JPG
+```
 
 # Converting Metadata CSV to YAML files
 
