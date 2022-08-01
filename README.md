@@ -76,7 +76,7 @@ Your folder **after** running the script should look something like this:
 ## 1. CSV template
 The CSV should have a column named 'identifier' which is what will be used to place the YAML file within the correct folder.
 Here is an example:
-![Example CSV file that has a column named 'identifier' alongside other metadata columns](./Images/csv_structure.png|width=250px height=100px)
+<img src="./Images/csv_structure.png" alt="Example CSV file that has a column named 'identifier' alongside other metadata columns" width="250" height="100">
 
 Other columns will be used to create the YAML file named `metadata.yml` within each work folder, which will look something like this:
 ![Example of a YAMl file](./Images/yml_example.png|width=250px height=100px)
