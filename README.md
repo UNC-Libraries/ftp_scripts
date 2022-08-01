@@ -79,8 +79,15 @@ Here is an example:
 <img src="./Images/csv_structure.png" alt="Example CSV file that has a column named 'identifier' alongside other metadata columns" width="500" height="250">
 
 Other columns will be used to create the YAML file named `metadata.yml` within each work folder, which will look something like this:  
-<img src="./Images/yml_example.png" alt="Example of a YAMl file" width="250" height="100">
+ `
+work_id: "32025806" 
 
+title: "test_01" 
+
+description: "Test document 1" 
+
+date_created: "7/18/22" 
+ `
 ## 2. Setting Up Your Local Environment
 Move the CSV you will want to convert to the parent directory of the folder containing the works to be uploaded. This script assumes you have the similar folder structures to the resulting folder from the 'sort_record_files.py' script. It also assumes that the folder the works are in is called **files_to_sort** and the CSV is called **metadata.csv**. If you want to change this, after you have downloaded the script, open it in a text/script editor and edit the following lines:
 * Change the `metadata.csv` in `with open('./metadata.csv', newline='') as md:` to the name of your CSV file.
