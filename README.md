@@ -30,12 +30,39 @@ In brief, the "rules" for uploading files to FromThePage are:
 ## 2. What this script Does
 
 This script is meant to organize the contents of a folder like that of the following image. We can see that each record has multiple files. For example: '78-21601_1.JPG' and '78-21601_2.JPG' both pertain the item titled '78-21601.'
-
-![Screenshot of the contents of a local folder with multiple files pertaining to one work on the same level](./Images/unorganized_files.png)
+```bash
+|-- files_to_sort
+    |-- 78-21601_1.JPG
+    |-- 78-21601_2.JPG
+    |-- 78-21602_1.JPG
+    |-- 78-21602_2.JPG
+    |-- 78-21603_1.JPG
+    |-- 78-21603_2.JPG
+    |-- 78-21604_1.JPG
+    |-- 78-21604_2.JPG
+    |-- 78-21605_1.JPG
+    |-- 78-21605_2.JPG
+```
 
 The organized version, ready for uploading into a FromThePage collection, has all the files pertaining to a single item are organized into a folder with the item number.
-
-![Screenshot of the contents of a local folder with subfolders dividing the unorganized files from the previous screenshot so that each subfolder pertains to one work and the respective files are within those subfolders](./Images/organized_files.png)
+```bash
+|-- files_to_sort
+    |-- 78-21601
+      |-- 78-21601_1.JPG
+      |-- 78-21601_2.JPG
+    |-- 78-21602
+      |-- 78-21602_1.JPG
+      |-- 78-21602_2.JPG
+    |-- 78-21603
+      |-- 78-21603_1.JPG
+      |-- 78-21603_2.JPG
+    |-- 78-21604
+      |-- 78-21604_1.JPG
+      |-- 78-21604_2.JPG
+    |-- 78-21605
+      |-- 78-21605_1.JPG
+      |-- 78-21605_2.JPG
+```
 
 
 ## 3. Setting Up Your Local Environment
