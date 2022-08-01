@@ -80,7 +80,7 @@ Before you can successfully run the script, you will need to have all the files 
 
 ![Alt Text](./Images/save_as_option.png)
 
-When the 'Save as...' window pops up, you will want to change the extension of the file from the default '.txt' to '.py'; this will change the file from a text to a Python file. The Python file should be saved in the parent directory of the folder to be sorted.
+4. Change the extension of the file from the default '.txt' to '.py'; this will change the file from a text to a Python file. The Python file should be saved in the parent directory of the folder to be sorted.
 
 ![Alt Text](./Images/save_as_python_file.png)
 
