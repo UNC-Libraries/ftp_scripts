@@ -2,11 +2,12 @@
 import os
 
 # sets folder and creates a list of all files
-# Below, type the local path to files, e.g. './78s/' or    ‘./Desktop/78s/records_to_upload/’
-folder =  <FILE PATH>  
+# Below, you can change the path, e.g. './78s/' or‘./Desktop/78s/records_to_upload/’
+folder = './files_to_sort/'
 content = os.listdir(folder)
+
 # The following line can be removed if no unwanted files are within the directory you’re working in. Otherwise, you want to specify the file types (e.g. ‘.JPG’, ‘.PDF’, etc.) 
-content = [x for x in content if '.JPG' in x] 
+content = [x for x in content if '.JPG' in x or '.PDF' in x or '.PNG' in x or '.GIF' in x] 
 
 
 # keeps only the titles of the records without the sides (no 78-21608_01 & 78-21608_2, just 78-21608)
