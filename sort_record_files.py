@@ -6,8 +6,8 @@ import os
 folder = './files_to_sort/'
 content = os.listdir(folder)
 
-# The following line can be removed if no unwanted files are within the directory you’re working in. Otherwise, you want to specify the file types (e.g. ‘.JPG’, ‘.PDF’, etc.) 
-content = [x for x in content if '.JPG' in x or '.PDF' in x or '.PNG' in x or '.GIF' in x] 
+# You can un-comment the following line if there are unwanted files in the unsorted folder that may cause an error
+# content = [x for x in content if '.JPG' in x or '.PDF' in x or '.PNG' in x or '.GIF' in x] 
 
 
 # keeps only the titles of the records without the sides (no 78-21608_01 & 78-21608_2, just 78-21608)
