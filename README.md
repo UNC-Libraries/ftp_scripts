@@ -48,20 +48,20 @@ The organized version, ready for uploading into a FromThePage collection, has al
 ```bash
 |-- files_to_sort
     |-- 78-21601
-      |-- 78-21601_1.JPG
-      |-- 78-21601_2.JPG
+            |-- 78-21601_1.JPG
+            |-- 78-21601_2.JPG
     |-- 78-21602
-      |-- 78-21602_1.JPG
-      |-- 78-21602_2.JPG
+            |-- 78-21602_1.JPG
+            |-- 78-21602_2.JPG
     |-- 78-21603
-      |-- 78-21603_1.JPG
-      |-- 78-21603_2.JPG
+            |-- 78-21603_1.JPG
+            |-- 78-21603_2.JPG
     |-- 78-21604
-      |-- 78-21604_1.JPG
-      |-- 78-21604_2.JPG
+            |-- 78-21604_1.JPG
+            |-- 78-21604_2.JPG
     |-- 78-21605
-      |-- 78-21605_1.JPG
-      |-- 78-21605_2.JPG
+            |-- 78-21605_1.JPG
+            |-- 78-21605_2.JPG
 ```
 
 ## 3. Setting Up Your Local Environment
