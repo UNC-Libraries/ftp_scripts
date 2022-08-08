@@ -22,10 +22,10 @@ with open('metadata.csv', newline='') as md:
         # Creates a file path based on the identifier using 'identifier'
         # This is following the template CSV provided by FromThePage
         # If the identifier column is named differently, change the code accordingly
-        file_path = './files_to_sort/' + record['identifier'] + '/' + 'metadata.yml'
+        file_path = './files_to_sort/' + record['folder_id'] + '/' + 'metadata.yml'
         
         # checks if the record is in the folder to avoid a key error
-        if record['identifier'] in os.listdir("./files_to_sort/"):
+        if record['folder_id'] in os.listdir("./files_to_sort/"):
             
             # creates the YAML file in each folder and writes metadata in the format: '<metadata attribute>: ”<sdf value>”'
             with open(file_path, 'w', encoding='utf-8') as f:
