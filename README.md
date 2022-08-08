@@ -48,20 +48,20 @@ The organized version, ready for uploading into a FromThePage collection, has al
 ```bash
 |-- files_to_sort
     |-- 78-21601
-            |-- 78-21601_1.JPG
-            |-- 78-21601_2.JPG
+        |-- 78-21601_1.JPG
+        |-- 78-21601_2.JPG
     |-- 78-21602
-            |-- 78-21602_1.JPG
-            |-- 78-21602_2.JPG
+        |-- 78-21602_1.JPG
+        |-- 78-21602_2.JPG
     |-- 78-21603
-            |-- 78-21603_1.JPG
-            |-- 78-21603_2.JPG
+        |-- 78-21603_1.JPG
+        |-- 78-21603_2.JPG
     |-- 78-21604
-            |-- 78-21604_1.JPG
-            |-- 78-21604_2.JPG
+        |-- 78-21604_1.JPG
+        |-- 78-21604_2.JPG
     |-- 78-21605
-            |-- 78-21605_1.JPG
-            |-- 78-21605_2.JPG
+        |-- 78-21605_1.JPG
+        |-- 78-21605_2.JPG
 ```
 
 ## 3. Setting Up Your Local Environment
@@ -89,6 +89,8 @@ Before you can successfully run the script, you will need to have all the files 
 
 > **Before continuing, make sure to change the folder's name to 'files_to_sort' as that the folder name is what the script will look for. Otherwise, you will have to open up a text/code editor and change the script.** 
 
+> Line 10 of the script `content = [x for x in content if '.JPG' in x or '.PDF' in x or '.PNG' in x or '.GIF' in x]` is commented out by default. If there are unwanted files in the unsorted folder, then this line should be un-commented (remove the `#` before the code and make sure there is proper identation). 
+
 ### Opening the Terminal
 1. Open the command prompt (Windows) or terminal (Mac/Linux) within the parent directory of the folder containing the files.
 
@@ -113,20 +115,20 @@ Your folder **after** running the script should look something like this:
 ```bash
 |-- files_to_sort
     |-- 78-21601
-      |-- 78-21601_1.JPG
-      |-- 78-21601_2.JPG
+        |-- 78-21601_1.JPG
+        |-- 78-21601_2.JPG
     |-- 78-21602
-      |-- 78-21602_1.JPG
-      |-- 78-21602_2.JPG
+        |-- 78-21602_1.JPG
+        |-- 78-21602_2.JPG
     |-- 78-21603
-      |-- 78-21603_1.JPG
-      |-- 78-21603_2.JPG
+        |-- 78-21603_1.JPG
+        |-- 78-21603_2.JPG
     |-- 78-21604
-      |-- 78-21604_1.JPG
-      |-- 78-21604_2.JPG
+        |-- 78-21604_1.JPG
+        |-- 78-21604_2.JPG
     |-- 78-21605
-      |-- 78-21605_1.JPG
-      |-- 78-21605_2.JPG
+        |-- 78-21605_1.JPG
+        |-- 78-21605_2.JPG
 ```
 
 # Converting Metadata CSV to YAML files
@@ -134,10 +136,10 @@ Your folder **after** running the script should look something like this:
 ## 1. CSV template
 The CSV should have a column named 'identifier' which is what will be used to place the YAML file within the correct folder.
 Here is an example: 
-| work_id | title | identifier | description | date_created |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-|32025806	| test_01	| test_01	| Test document 1 |	7/18/22 |
-|32025807 | test_02 |	test_02 |	Test document 2	| 7/19/22 |
+| folder_id | title | identifier | description |
+| ----------- | ----------- | ----------- | ----------- | 
+|32025806	| test_01	| test_01	| Test document 1 |	
+|32025807 | test_02 |	test_02 |	Test document 2	|
 
 
 Other columns will be used to create the YAML file named `metadata.yml` within each work folder, which will look something like this:  
