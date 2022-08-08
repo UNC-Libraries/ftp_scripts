@@ -28,7 +28,7 @@ with open('metadata.csv', newline='') as md:
         # creates the YAML file in each folder and writes metadata in the format: '<metadata attribute>: ”<sdf value>”'
         with open(file_path, 'w', encoding='utf-8') as f:
             for col in cols:
-                if col not 'identifier':
+                if col != 'identifier':
                 f.write(col+': "'+record[col]+'"\n')
 
 # confirms that the script ran successfully 
