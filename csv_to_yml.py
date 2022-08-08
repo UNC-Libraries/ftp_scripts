@@ -23,13 +23,14 @@ with open('metadata.csv', newline='') as md:
         # This is following the template CSV provided by FromThePage
         # If the identifier column is named differently, change the code accordingly
         file_path = './files_to_sort/' + record['identifier'] + '/' + 'metadata.yml'
+        
+        # checks if the record is in the folder to avoid a key error
+        if record['identifier'] in os.listdir("./files_to_sort/"):
+            
+            # creates the YAML file in each folder and writes metadata in the format: '<metadata attribute>: ”<sdf value>”'
+            with open(file_path, 'w', encoding='utf-8') as f:
+                for col in cols:
+                    f.write(col+': "'+record[col]+'"\n')
 
-
-        # creates the YAML file in each folder and writes metadata in the format: '<metadata attribute>: ”<sdf value>”'
-        with open(file_path, 'w', encoding='utf-8') as f:
-            for col in cols:
-                if col != 'identifier':
-                f.write(col+': "'+record[col]+'"\n')
-
-# confirms that the script ran successfully 
+# confirms that the script ran successfully
 print('YAML files created.')
